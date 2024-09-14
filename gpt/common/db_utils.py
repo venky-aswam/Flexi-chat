@@ -4,7 +4,7 @@ def read_sql_query(sql):
     print(sql)
     try:
         dsn = cx_Oracle.makedsn('192.168.61.5', '1521', sid='uat')
-        conn = cx_Oracle.connect(user='flexion', password='flexion', dsn=dsn)
+        conn = cx_Oracle.connect(user='', password='', dsn=dsn)
         cur = conn.cursor()
         cur.execute(sql)
         column_names = [col[0] for col in cur.description]
