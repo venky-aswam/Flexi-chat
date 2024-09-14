@@ -1,0 +1,5 @@
+streamlit
+flask
+cx_Oracle
+python-dotenv
+google-generativeai
